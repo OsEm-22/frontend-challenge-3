@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Frontend Mentor | Fylo data storage component</title>
+
+    <style></style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-card">
+        <div class="fylo">
+          <img src="./images/logo.svg" alt="fylo logo" />
+        </div>
+        <div class="three-icons">
+          <img
+            src="./images/icon-document.svg"
+            alt="icon-document"
+            class="btn"
+          />
+          <img src="./images/icon-folder.svg" alt="icon-folder" class="btn" />
+          <img src="./images/icon-upload.svg" alt="icon-upload" class="btn" />
+        </div>
+      </div>
+
+      <div class="right-card">
+        <div class="msg">
+          <p>You’ve used <span>815 GB</span> of your storage</p>
+        </div>
+        <div class="slidecontainer">
+          <input
+            type="range"
+            min="0"
+            max="1000"
+            value="815"
+            class="slider"
+            id="myRange"
+          />
+        </div>
+        <div class="mini-row">
+          <p>0 GB</p>
+          <p>1000 GB</p>
+          <div class="float-msg">
+            <p>185 <span>GB LEFT</span></p>
+          </div>
+          <div class="traingle"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+    <!--  185 GB Left  -->
+  </body>
+</html>

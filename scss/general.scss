@@ -1,0 +1,136 @@
+@use "media375px";
+@use "media1440px";
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+// ### Neutral
+
+$pale-blue: hsl(243, 100%, 93%);
+$grayish-blue: hsl(229, 7%, 55%);
+$dark-blue: hsl(228, 56%, 26%);
+$very-dark-blue: hsl(229, 57%, 11%);
+$font-family: "Raleway", sans-serif;
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: $font-family;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: $very-dark-blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  height: fit-content;
+  align-items: flex-end;
+  gap: 2rem;
+}
+
+.left-card {
+  background-color: $dark-blue;
+  padding: 2.5rem;
+  padding-right: 8rem;
+  border-radius: 1rem;
+  border-top-right-radius: 8.5rem;
+}
+
+.three-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  margin-top: 3rem;
+  border: none;
+}
+
+.btn {
+  padding: 1.3rem;
+  border-radius: 1rem;
+  background-color: $very-dark-blue;
+}
+
+.right-card {
+  color: $grayish-blue;
+  background-color: $dark-blue;
+  padding: 2em 3rem;
+  position: relative;
+  border-radius: 1rem;
+  span {
+    color: $pale-blue;
+  }
+}
+
+.mini-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+  color: $pale-blue;
+  position: relative;
+  p {
+    margin-bottom: 0;
+  }
+}
+
+div.float-msg {
+  color: black;
+  background-color: white;
+  padding: 1.5rem;
+  font-weight: bolder;
+  border: none;
+  border-radius: 0.5rem;
+  border-bottom-right-radius: 0;
+  position: absolute;
+  bottom: 96px;
+  left: 113px;
+
+  span {
+    color: $grayish-blue;
+    font-size: 11px;
+  }
+}
+
+.traingle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 20px 20px 0;
+  border-color: transparent #ffffff transparent transparent;
+  position: absolute;
+  left: 205.5px;
+  bottom: 77px;
+}
+
+p {
+  margin-bottom: 2rem;
+}
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 20px;
+  background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #ffffff;
+  cursor: pointer;
+}
